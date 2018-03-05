@@ -1,5 +1,4 @@
 import sys
-import navio.util
 
 while (True):
 
