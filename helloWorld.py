@@ -15,4 +15,5 @@ ser = serial.Serial(
 
 while (True):
 	x = ser.readline()
-	print x
+	if x != "": 
+		print x
