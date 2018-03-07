@@ -18,7 +18,7 @@ data = []
 while (count < 10):
 	x = ser.readline()
 	if x != "":
-                data[count] = x
+                data[0] = x
                 count = count + 1
 		print x
 
