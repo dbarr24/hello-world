@@ -2,6 +2,7 @@
 
 import sys
 import serial
+from array import array
 	
 ser = serial.Serial(
 		
@@ -18,7 +19,7 @@ data = []
 while (count < 10):
 	x = ser.readline()
 	if x != "":
-                data[0] = x
+                data.append(x)
                 count = count + 1
 		print x
 
