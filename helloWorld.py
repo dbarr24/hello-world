@@ -26,4 +26,4 @@ fh = open("BarcodeData.txt", "w")
 fh.writelines(data)
 fh.close()
 
-scp pi@172.20.10.5:BarcodeData.txt
+#scp pi@172.20.10.5:BarcodeData.txt
