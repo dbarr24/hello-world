@@ -13,7 +13,17 @@ ser = serial.Serial(
 	timeout=1
 	)
 
-while (True):
+count = 0
+data = []
+while (count < 10):
 	x = ser.readline()
-	if x != "": 
+	if x != "":
+                data[count] = x
+                count = count + 1
 		print x
+
+fh = open("BarcodeData.txt", "w")
+fh.writelines(data)
+fh.close()
+
+scp pi@172.20.10.5:BarcodeData.txt
