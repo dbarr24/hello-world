@@ -2,7 +2,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
-import test
 
 
 email_user = 'stockHawk2018@gmail.com'
