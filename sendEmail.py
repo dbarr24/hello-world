@@ -2,6 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
+import test
 
 
 email_user = 'stockHawk2018@gmail.com'
@@ -17,7 +18,7 @@ from email import encoders
 body = 'Hey it is Pi!'
 msg.attach(MIMEText(body,'plain'))
 
-filename = 'BarcodeText.txt'
+filename = 'BarcodeData.txt'
 attachment = open(filename,'rb')
 
 part = MIMEBase('applicaion','octet-stream')
