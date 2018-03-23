@@ -19,6 +19,7 @@ count = 0
 data = []
 while (count < 2):
 	x = ser.readline()
+	print x
 	if x != "":
 		x = "Barcode" + count + ": " + x
                 data.append(x)
