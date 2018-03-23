@@ -21,7 +21,7 @@ while (count < 2):
 	x = ser.readline()
 	print x
 	if x != "":
-		x = "Barcode" + count + ": " + x
+		x = "Barcode" + str(count) + ": " + x
                 data.append(x)
                 count = count + 1
 
