@@ -17,13 +17,13 @@ ser = serial.Serial(
 
 count = 0
 data = []
-while (count < 2):
+while (count < 5):
 	x = ser.readline()
-	print x
 	if x != "":
-		x = "Barcode" + str(count) + ": " + x
+		x = "Barcode " + str(count + 1) + ": " + x
                 data.append(x)
                 count = count + 1
+		print x
 
 fh = open("BarcodeData.txt", "w")
 fh.writelines(data)
